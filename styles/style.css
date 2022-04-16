@@ -6,7 +6,7 @@
                             max-width: 1600px;
                             margin: auto;
                             font-family: Helvetica neue, Arial, sans-serif;
-                            Font-size: 16px;
+                            font-size: 16px;
                             line-height: 20px;
                         }
                         
@@ -387,7 +387,6 @@
                             font-weight: 500;
                             z-index: 1;
                             max-width: 154px;
-                            z-index: 1;
                         }
                         
                         .about__content {
@@ -425,11 +424,15 @@
                             padding-bottom: 60px;
                             padding-left: 80px;
                             padding-right: 102px;
+                            min-height: 224px;
                         }
                         
                         .footer__columns {
                             display: flex;
-                            min-height: 224px;
+                            /* Dear Code-reviewer,
+                         I added this  to make it look identical to the design
+                         although there was no exact margin value specified in the brief */
+                            margin-bottom: 100px;
                         }
                         
                         .footer__column_content_hours {
@@ -445,11 +448,6 @@
                             height: 32px;
                         }
                         
-                        .footer__column-heading {
-                            margin-top: 0px;
-                            margin-bottom: 20px;
-                        }
-                        
                         .footer__list {
                             /* The code below removes the default browser styles for lists */
                             list-style-type: none;
@@ -462,7 +460,10 @@
                         
                         .footer__list-item {}
                         
-                        .footer__column-heading {}
+                        .footer__column-heading {
+                            margin-top: 0px;
+                            margin-bottom: 20px;
+                        }
                         
                         .footer__column-link {
                             color: white;
@@ -480,4 +481,7 @@
                             height: 16px;
                         }
                         
-                        .footer__copyright {}
+                        .footer__copyright {
+                            margin-bottom: 0;
+                            margin-top: auto;
+                        }
